@@ -56,8 +56,8 @@ body {
     align-items: center;
 }
 
-input {
-    width: 70%;
+.input-text {
+    width: 60%;
     border: none;
     outline: none;
     border-bottom: 2px solid var(--color-sec);
@@ -67,23 +67,25 @@ input {
     font-weight: bolder;
 }
 
-button {
+.btn {
     width: 25%;
+    margin-left: 10px;
+    /* Add margin to create space between the buttons */
     padding: 1rem 5px;
     outline: none;
     border-radius: 3px;
     color: var(--white);
-    background: var(--color-sec);
-    box-shadow: 2px 2px 2px 0px rgba(248, 175, 92, 0.9);
+    background: var(--color-primary);
+    box-shadow: 2px 2px 2px 0px rgba(244, 130, 221, 0.9);
     border: 2px solid var(--white);
     cursor: pointer;
 }
 
-button:hover {
+.btn:hover {
     font-weight: bolder;
-    background: rgba(248, 175, 92, 0.9);
-    color: var(--color-light-blue);
-    border: 2px solid var(--color-sec);
+    background: rgba(244, 130, 221, 0.9);
+    box-shadow: 2px 2px 2px 0px var(--color-primary);
+    border: 2px solid var(--white);
 }
 
 p {
@@ -92,4 +94,4 @@ p {
     font-size: 2rem;
     font-weight: 600;
     color: var(--color-dark-grey);
-  }
+}
